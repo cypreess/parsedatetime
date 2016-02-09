@@ -2577,7 +2577,7 @@ class Constants(object):
 
         # Always support common . and - separators
         dateSeps = ''.join(re.escape(s)
-                           for s in self.locale.dateSep + ['-', '.'])
+                           for s in self.locale.dateSep + ['-'])
 
         self.RE_DATE = r'''([\s(\["'-]|^)
                            (?P<date>
